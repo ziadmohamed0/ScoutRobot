@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Elegoo.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000741211972841939 -0.00166290229068674 -0.017794541921068"
+        rpy="0 0 0" />
+      <mass
+        value="0.44669833445996" />
+      <inertia
+        ixx="0.00086870532659213"
+        ixy="1.4016404155117E-06"
+        ixz="-2.87237658354206E-07"
+        iyy="0.000227870298625553"
+        iyz="-1.84079012925111E-07"
+        izz="0.00108030496581695" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fr_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.00812098210358325 -2.61274821222734E-11 -8.04612418359163E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.306109899457103" />
+      <inertia
+        ixx="0.000221397987094038"
+        ixy="-9.62581531145726E-14"
+        ixz="-3.1294391080626E-15"
+        iyy="0.000120221604288152"
+        iyz="7.500697622511E-10"
+        izz="0.000120221932097438" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/fr_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/fr_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.05305 -0.0414000000160041 -0.0309500000000014"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_wheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="br_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.00812098209818402 -8.86757039325614E-11 -1.58697797958407E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.306109899141489" />
+      <inertia
+        ixx="0.000221397987078634"
+        ixy="2.46875075171729E-14"
+        ixz="2.18331624009112E-14"
+        iyy="0.000120221402158807"
+        iyz="6.74917916694162E-10"
+        izz="0.000120222134205591" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/br_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/br_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="br_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0530500000000004 0.0404000000159994 -0.0309499999999987"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="br_wheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="fl_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.00812098210216263 8.01086644935944E-11 -1.095819754382E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.306109899373842" />
+      <inertia
+        ixx="0.000221397987089165"
+        ixy="-1.63115243754675E-14"
+        ixz="1.81538121918452E-14"
+        iyy="0.000120221604257845"
+        iyz="7.49836921704749E-10"
+        izz="0.000120221932121374" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/fl_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/fl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0530499999999999 -0.0414000000160042 -0.0309500000000014"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fl_wheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="bl_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.00812098233727373 2.80416169451403E-10 -2.04033130668524E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.306109913185571" />
+      <inertia
+        ixx="0.00022139798772043"
+        ixy="1.2501233350796E-13"
+        ixz="-1.34374527577188E-13"
+        iyy="0.000120221402395312"
+        iyz="6.74940995971288E-10"
+        izz="0.000120222134866692" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/bl_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/bl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bl_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0530500000000007 0.0404000000159994 -0.0309499999999988"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bl_wheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="ir_Link">
+    <inertial>
+      <origin
+        xyz="0.000477308888217251 -0.000414812003878431 0.000256174286212774"
+        rpy="0 0 0" />
+      <mass
+        value="0.00804782748410787" />
+      <inertia
+        ixx="4.70841197895188E-07"
+        ixy="1.33881254865878E-09"
+        ixz="-1.3627048521336E-08"
+        iyy="1.67017735061089E-06"
+        iyz="-9.08429358767128E-09"
+        izz="1.23708186999385E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/ir_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.643137254901961 0.615686274509804 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/ir_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ir_base"
+    type="fixed">
+    <origin
+      xyz="-0.000287508725744888 -0.0943526002392224 -0.0521"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="ir_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="ultrasonic_Link">
+    <inertial>
+      <origin
+        xyz="0.000186378632557201 0.0180611896657809 0.00944681751031298"
+        rpy="0 0 0" />
+      <mass
+        value="0.0095427452850795" />
+      <inertia
+        ixx="6.46398900589765E-07"
+        ixy="-1.31573709956567E-09"
+        ixz="1.7516152650556E-08"
+        iyy="1.01797208530448E-06"
+        iyz="-6.66885345101065E-08"
+        izz="1.53387834735778E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/ultrasonic_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Elegoo.SLDASM/meshes/ultrasonic_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ultrasonic_Joint"
+    type="continuous">
+    <origin
+      xyz="4.49999259999962E-05 -0.08296 0.01906"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="ultrasonic_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

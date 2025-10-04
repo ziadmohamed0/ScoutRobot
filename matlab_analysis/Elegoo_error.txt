@@ -1,0 +1,12 @@
+Constrained Instances: 'Battery Cover-1', 'Battery Cover-1', 'Battery Holder-1', 'Battery Holder-1'
+Constraint Name: Width1
+Error Details: Constraint is not supported. The constraint has been ignored.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Dead Plate-1', 'Dead Plate-1', 'Servo-1', 'Servo-1'
+Constraint Name: Width4
+Error Details: Constraint is not supported. The constraint has been ignored.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Dead Plate-1', 'Dead Plate-1', 'Servo-1', 'Servo-1'
+Constraint Name: Width5
+Error Details: Constraint is not supported. The constraint has been ignored.
+---------------------------------------------------------------------------------
