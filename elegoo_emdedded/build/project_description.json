@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "elegoo_emdedded",
-    "project_version":    "98f3792-dirty",
+    "project_version":    "476ddcd-dirty",
     "project_path":       "/home/ziad/ziad_ws/Project_V2V/elegoo_emdedded",
     "idf_path":           "/home/ziad/esp/esp-idf",
     "build_dir":          "/home/ziad/ziad_ws/Project_V2V/elegoo_emdedded/build",
