@@ -1,0 +1,2 @@
+source /home/ziad/ziad_ws/Project_V2V/elegoo_emdedded/build/bootloader/gdbinit/symbols
+source /home/ziad/ziad_ws/Project_V2V/elegoo_emdedded/build/bootloader/gdbinit/connect

@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by
+Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Elegoo_v2.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00011366394225221 0.0016356087293449 -0.0213439740529758"
+        rpy="0 0 0" />
+      <mass
+        value="0.320481422655543" />
+      <inertia
+        ixx="0.00084861505736386"
+        ixy="2.97152629807314E-07"
+        ixz="3.45559131607919E-07"
+        iyy="0.000200725740731641"
+        iyz="3.92026930988546E-09"
+        izz="0.00103876752693472" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link
+    name="fr_motor_Link">
+    <inertial>
+      <origin
+        xyz="0.00040466927716902 -0.0112499995993381 0.0202439168825699"
+        rpy="0 0 0" />
+      <mass
+        value="0.00854876685458474" />
+      <inertia
+        ixx="1.17165891905495E-06"
+        ixy="-4.71279787373282E-15"
+        ixz="-7.83815378361138E-09"
+        iyy="1.07002331783213E-06"
+        iyz="2.37928847446726E-15"
+        izz="6.48599680422981E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/fr_motor_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/fr_motor_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="fr_motor_joint"
+    type="fixed">
+    <origin
+      xyz="0.0371499999999999 -0.0493500000160009 -0.0197000000000017"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_motor_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="fr_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.00812098210358325 -2.612350787079E-11 -8.04612418359163E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.306109899457103" />
+      <inertia
+        ixx="0.000221397987094039"
+        ixy="-9.62581554005092E-14"
+        ixz="-3.12943794190309E-15"
+        iyy="0.000120221604288152"
+        iyz="7.50069762252742E-10"
+        izz="0.000120221932097438" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/fr_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/fr_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="fr_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0159000000000001 -0.0112499999999997 -0.0079499999999967"
+      rpy="0 0 0" />
+    <parent
+      link="fr_motor_Link" />
+    <child
+      link="fr_wheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  
+  <link
+    name="br_motor_link">
+    <inertial>
+      <origin
+        xyz="-0.0154953307228312 -4.0066170867159E-10 -0.0281939168825704"
+        rpy="0 0 0" />
+      <mass
+        value="0.00854876685458473" />
+      <inertia
+        ixx="1.17165891905496E-06"
+        ixy="4.71279774995399E-15"
+        ixz="7.83815378361428E-09"
+        iyy="1.07002331783213E-06"
+        iyz="2.37928740704708E-15"
+        izz="6.48599680422981E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/br_motor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/br_motor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="br_motor_joint"
+    type="fixed">
+    <origin
+      xyz="0.0530500000000004 0.0404000000159994 -0.0309499999999987"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="br_motor_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="br_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.0081209823372738 2.80416386291837E-10 2.0403299882954E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.306109913185571" />
+      <inertia
+        ixx="0.00022139798772043"
+        ixy="-1.25012313579482E-13"
+        ixz="-1.34374232378856E-13"
+        iyy="0.000120221402395312"
+        iyz="-6.74940995967257E-10"
+        izz="0.000120222134866692" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/br_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/br_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="br_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="br_motor_link" />
+    <child
+      link="br_wheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  
+  <link
+    name="fl_motor_link">
+    <inertial>
+      <origin
+        xyz="-0.000404669277169013 -0.0112500004006633 0.0202439168825699"
+        rpy="0 0 0" />
+      <mass
+        value="0.00854876685458474" />
+      <inertia
+        ixx="1.17165891905495E-06"
+        ixy="-4.71279828000432E-15"
+        ixz="7.83815378361173E-09"
+        iyy="1.07002331783213E-06"
+        iyz="-2.37925934546497E-15"
+        izz="6.48599680422981E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/fl_motor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/fl_motor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="fl_motor_link"
+    type="fixed">
+    <origin
+      xyz="-0.0371499999999999 -0.0493500000160009 -0.0197000000000017"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fl_motor_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="fl_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.0081209821021626 8.01126717048239E-11 -1.09581996254882E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.306109899373842" />
+      <inertia
+        ixx="0.000221397987089165"
+        ixy="-1.63115245149735E-14"
+        ixz="1.81538125976807E-14"
+        iyy="0.000120221604257845"
+        iyz="7.49836921706871E-10"
+        izz="0.000120221932121374" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/fl_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/fl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="fl_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0159000000000001 -0.0112499999999997 -0.00794999999999667"
+      rpy="0 0 0" />
+    <parent
+      link="fl_motor_link" />
+    <child
+      link="fl_wheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  
+  <link
+    name="bl_motor_link">
+    <inertial>
+      <origin
+        xyz="-0.00040466927716911 -0.0112499995993367 -0.0202439168825706"
+        rpy="0 0 0" />
+      <mass
+        value="0.00854876685458473" />
+      <inertia
+        ixx="1.17165891905496E-06"
+        ixy="4.712798303074E-15"
+        ixz="-7.83815378361441E-09"
+        iyy="1.07002331783213E-06"
+        iyz="-2.37926014331489E-15"
+        izz="6.48599680422981E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/bl_motor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/bl_motor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="bl_motor_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0371500000000002 0.0483500000159991 -0.0196999999999984"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="bl_motor_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="bl_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.00812098209818358 -8.86754281115287E-11 1.58697666119423E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.306109899141489" />
+      <inertia
+        ixx="0.000221397987078633"
+        ixy="-2.46875734011864E-14"
+        ixz="2.18328706921292E-14"
+        iyy="0.000120221402158807"
+        iyz="-6.74917916685317E-10"
+        izz="0.000120222134205591" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/bl_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/bl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="bl_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0159000000000005 -0.0112500000000003 0.00794999999999974"
+      rpy="0 0 0" />
+    <parent
+      link="bl_motor_link" />
+    <child
+      link="bl_wheel_link" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  
+  <link
+    name="servo_Link">
+    <inertial>
+      <origin
+        xyz="0.00607283375162547 -0.00183789515247874 -0.000357176173858123"
+        rpy="0 0 0" />
+      <mass
+        value="0.00718760563331449" />
+      <inertia
+        ixx="7.10250592751377E-07"
+        ixy="5.72117003716923E-19"
+        ixz="4.96492179712969E-14"
+        iyy="4.32928194351315E-07"
+        iyz="2.78915203316387E-08"
+        izz="4.52034743523462E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/servo_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/servo_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="servo_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00602783382563871 -0.0887500000000001 0.0026547190729892"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="servo_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="ultrasonic_link">
+    <inertial>
+      <origin
+        xyz="0.000186378632557201 0.0180611896657809 0.00944681751031297"
+        rpy="0 0 0" />
+      <mass
+        value="0.0095427452850795" />
+      <inertia
+        ixx="6.46398900589765E-07"
+        ixy="-1.31573709956568E-09"
+        ixz="1.7516152650556E-08"
+        iyy="1.01797208530448E-06"
+        iyz="-6.66885345101065E-08"
+        izz="1.53387834735778E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/ultrasonic_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/ultrasonic_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="ultrasonic_joint"
+    type="continuous">
+    <origin
+      xyz="0.00607283375163871 0.0164052809270108 -0.00579000000000005"
+      rpy="0 0 0" />
+    <parent
+      link="servo_Link" />
+    <child
+      link="ultrasonic_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  
+  <link
+    name="track_sensor_Link">
+    <inertial>
+      <origin
+        xyz="0.000477308888217252 -0.000414812003878433 0.000256174286212774"
+        rpy="0 0 0" />
+      <mass
+        value="0.00804782748410787" />
+      <inertia
+        ixx="4.70841197895188E-07"
+        ixy="1.33881254865878E-09"
+        ixz="-1.3627048521336E-08"
+        iyy="1.67017735061089E-06"
+        iyz="-9.08429358767129E-09"
+        izz="1.23708186999385E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/track_sensor_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.643137254901961 0.615686274509804 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/track_sensor_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="track_sensor_joint"
+    type="fixed">
+    <origin
+      xyz="-0.000287508725744888 -0.0943526002392224 -0.0521"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="track_sensor_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="esp32_link">
+    <inertial>
+      <origin
+        xyz="0.00680502314224933 0.000102581007276233 4.24504957637246E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00453801750708847" />
+      <inertia
+        ixx="2.38865919200289E-07"
+        ixy="-2.35601527156661E-08"
+        ixz="-8.82344231728407E-11"
+        iyy="1.05984189174445E-06"
+        iyz="5.32794164930177E-11"
+        izz="8.46807257014312E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/esp32_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/esp32_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="esp32_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00614078181180603 0.0311604748959537 0.0042"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="esp32_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="imu_link">
+    <inertial>
+      <origin
+        xyz="-7.04863640918442E-06 0 -0.000486156769983702"
+        rpy="0 0 0" />
+      <mass
+        value="0.000311849337348909" />
+      <inertia
+        ixx="9.99884491287168E-09"
+        ixy="-1.07184326151298E-24"
+        ixz="-3.67661936270729E-28"
+        iyy="6.35705073390977E-09"
+        iyz="1.78208937562128E-28"
+        izz="1.63048460077501E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/imu_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/imu_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00171649060501221 -0.0317500000000002 -0.0412"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="l298_link">
+    <inertial>
+      <origin
+        xyz="-0.00054516161249073 -0.00684487389585517 0.0147975578460123"
+        rpy="0 0 0" />
+      <mass
+        value="0.0258928081974277" />
+      <inertia
+        ixx="1.92543190581059E-06"
+        ixy="2.96876853910747E-10"
+        ixz="3.43695513236861E-22"
+        iyy="3.09891750369211E-06"
+        iyz="1.39491593493272E-07"
+        izz="2.17577602367061E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/l298_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://elegoo_description/meshes/l298_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="l298_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.0149499999999998 -0.0259358457987049"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l298_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <!-- Gazebo Materials for better visualization -->
+  <gazebo reference="base_link">
+    <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  
+  <gazebo reference="fr_wheel_link">
+    <material>Gazebo/Black</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+  </gazebo>
+  
+  <gazebo reference="fl_wheel_link">
+    <material>Gazebo/Black</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+  </gazebo>
+  
+  <gazebo reference="br_wheel_link">
+    <material>Gazebo/Black</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+  </gazebo>
+  
+  <gazebo reference="bl_wheel_link">
+    <material>Gazebo/Black</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+  </gazebo>
+
+  <!-- Gazebo Differential Drive Plugin -->
+  <gazebo>
+    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+      
+      <!-- Update rate -->
+      <update_rate>50</update_rate>
+      
+      <!-- Wheels -->
+      <left_joint>fl_wheel_joint</left_joint>
+      <right_joint>fr_wheel_joint</right_joint>
+      
+      <!-- Kinematics -->
+      <wheel_separation>0.074</wheel_separation>
+      <wheel_diameter>0.065</wheel_diameter>
+      
+      <!-- Limits -->
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>1.0</max_wheel_acceleration>
+      
+      <!-- Output -->
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>false</publish_wheel_tf>
+      
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      
+      <!-- ROS 2 remapping -->
+      <ros>
+        <namespace>/</namespace>
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+    </plugin>
+  </gazebo>
+
+  <!-- IMU Sensor -->
+  <gazebo reference="imu_link">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>imu</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu/data</topicName>
+        <bodyName>imu_link</bodyName>
+        <updateRateHZ>100.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>imu_link</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+  <!-- Ultrasonic Sensor -->
+  <gazebo reference="ultrasonic_link">
+    <sensor type="ray" name="ultrasonic_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>20</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>5</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.15</min_angle>
+            <max_angle>0.15</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.02</min>
+          <max>4.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="ultrasonic_sensor_plugin" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <namespace>/elegoo</namespace>
+          <remapping>~/out:=ultrasonic/data</remapping>
+        </ros>
+        <output_type>sensor_msgs/Range</output_type>
+        <radiation_type>ultrasound</radiation_type>
+        <frame_name>ultrasonic_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- Track Sensor (Line Follower) -->
+  <gazebo reference="track_sensor_Link">
+    <sensor type="ray" name="track_sensor">
+      <pose>0 0 0 0 1.5708 0</pose>
+      <visualize>true</visualize>
+      <update_rate>30</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>3</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.1</min_angle>
+            <max_angle>0.1</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.005</min>
+          <max>0.05</max>
+          <resolution>0.001</resolution>
+        </range>
+      </ray>
+      <plugin name="track_sensor_plugin" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <namespace>/elegoo</namespace>
+          <remapping>~/out:=track_sensor/data</remapping>
+        </ros>
+        <output_type>sensor_msgs/Range</output_type>
+        <radiation_type>infrared</radiation_type>
+        <frame_name>track_sensor_Link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

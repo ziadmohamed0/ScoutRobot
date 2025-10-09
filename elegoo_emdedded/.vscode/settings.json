@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "gpio_etm.h": "c",
+        "functional": "cpp",
+        "cmath": "cpp"
+    }
+}

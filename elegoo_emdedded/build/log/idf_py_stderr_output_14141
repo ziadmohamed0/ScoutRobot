@@ -1,0 +1,19 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/ziad/.espressif/python_env/idf5.5_py3.10_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 /home/ziad/ziad_ws/Project_V2V/elegoo_emdedded
+CMake Error at /home/ziad/esp/esp-idf/tools/cmake/component.cmake:491 (add_library):
+  Cannot find source file:
+
+    /home/ziad/ziad_ws/Project_V2V/elegoo_emdedded/custom_driver/INCULDE_DIRS
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+Call Stack (most recent call first):
+  custom_driver/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Error at /home/ziad/esp/esp-idf/tools/cmake/component.cmake:491 (add_library):
+  No SOURCES given to target: __idf_custom_driver
+Call Stack (most recent call first):
+  custom_driver/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
