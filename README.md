@@ -79,7 +79,7 @@ This comprehensive project combines **embedded systems**, **IoT communication**,
 ## 📁 Repository Structure
 
 ```
-Project_V2V/
+ScoutRobot/
 ├── embedded_iot/                 # ESP32 Firmware (IDF-based)
 │   ├── main/                     # Main application entry point
 │   │   ├── main.cpp             # Core firmware logic
