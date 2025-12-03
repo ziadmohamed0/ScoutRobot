@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS
+        "led/led.cpp"
+        "dc_motor/dc_motor.cpp"
+        "button/button.cpp"
+        "pid/pid.cpp"
+        "pot/pot.cpp"
+        "ultrasonic/ultrasonic.cpp"
+        "tcrt5000/TCRT5000.cpp"
+        "mpu6050/MPU6050.cpp"
+    INCLUDE_DIRS
+        "led"
+        "dc_motor"
+        "button"
+        "pid"
+        "pot"
+        "ultrasonic"
+        "tcrt5000"
+        "mpu6050"
+    REQUIRES
+        mcu
+)

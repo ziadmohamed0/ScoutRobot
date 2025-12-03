@@ -1,0 +1,2 @@
+source /home/ziad/ziad_ws/Project_V2V/embedded_iot/build/gdbinit/symbols
+source /home/ziad/ziad_ws/Project_V2V/embedded_iot/build/gdbinit/connect

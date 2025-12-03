@@ -1,0 +1,302 @@
+Command: /home/ziad/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/ziad/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/ziad/ziad_ws/Project_V2V/embedded_iot/build/esp32.elf /home/ziad/ziad_ws/Project_V2V/embedded_iot/build/bootloader/bootloader.elf -m '/home/ziad/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/ziad/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6376
+load:0x40078000,len:15900
+ho 0 tail 12 room 4
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (29) boot: ESP-IDF v6.0-beta1-567-gdaa1d34909 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  2 2025 04:08:06[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3c9fch (248316) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=0004ca24 vaddr=3ffb0000 size=035f4h ( 13812) load[0m
+[0;32mI (184) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=a745ch (685148) map[0m
+[0;32mI (428) esp_image: segment 3: paddr=000f7484 vaddr=3ffb35f4 size=00b70h (  2928) load[0m
+[0;32mI (430) esp_image: segment 4: paddr=000f7ffc vaddr=40080000 size=1597ch ( 88444) load[0m
+[0;32mI (468) esp_image: segment 5: paddr=0010d980 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (479) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (479) boot: Disabling RNG early entropy source...[0m
+[0;32mI (490) cpu_start: Multicore app[0m
+[0;32mI (498) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (498) cpu_start: Pro cpu start user code[0m
+[0;32mI (498) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (500) app_init: Application information:[0m
+[0;32mI (504) app_init: Project name:     esp32[0m
+[0;32mI (508) app_init: App version:      37c472e-dirty[0m
+[0;32mI (512) app_init: Compile time:     Dec  2 2025 04:08:47[0m
+[0;32mI (517) app_init: ELF file SHA256:  7c613c5b3...[0m
+[0;32mI (521) app_init: ESP-IDF:          v6.0-beta1-567-gdaa1d34909[0m
+[0;32mI (527) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (531) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (535) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (539) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (545) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (550) heap_init: At 3FFB8D00 len 00027300 (156 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (561) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 4009597C len 0000A684 (41 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (575) spi_flash: flash io: dio[0m
+[0;33mW (578) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (592) main_task: Started on CPU0[0m
+[0;32mI (602) main_task: Calling app_main()[0m
+[0;32mI (622) WIFI_MANAGER: WiFi Manager initialized[0m
+[0;32mI (642) wifi:wifi driver task: 3ffc0ca4, prio:23, stack:6656, core=0[0m
+[0;32mI (652) wifi:wifi firmware version: dfff79f[0m
+[0;32mI (652) wifi:wifi certification version: v7.0[0m
+[0;32mI (652) wifi:config NVS flash: enabled[0m
+[0;32mI (652) wifi:config nano formatting: disabled[0m
+[0;32mI (652) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (662) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (662) wifi:Init management short buffer num: 32[0m
+[0;32mI (672) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (672) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (682) wifi:Init static rx buffer num: 10[0m
+[0;32mI (682) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (692) wifi_init: accept mbox: 6[0m
+[0;32mI (692) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (702) wifi_init: tcp mbox: 6[0m
+[0;32mI (702) wifi_init: tcp tx win: 5760[0m
+[0;32mI (702) wifi_init: tcp rx win: 5760[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) WIFI_MANAGER: WiFi Station initialized with SSID: Mohamed Fathy[0m
+[0;32mI (722) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (812) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (832) wifi:mode : sta (fc:e8:c0:75:81:90)[0m
+[0;32mI (832) wifi:enable tsf[0m
+[0;32mI (832) WIFI_MANAGER: Connecting to WiFi...[0m
+[0;32mI (832) MQTT_CLIENT: MQTT Client created[0m
+[0;32mI (842) WIFI_MANAGER: WiFi started, attempting connection...[0m
+[0;32mI (852) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (852) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (852) MQTT_CLIENT: MQTT Client initialized with broker: mqtt://192.168.100.25[0m
+[0;32mI (852) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (862) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (872) MQTT_CLIENT: Connecting to MQTT broker...[0m
+[1;31mE (872) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (872) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (882) mqtt_client: Error transport connect[0m
+[1;31mE (882) MQTT_CLIENT: MQTT error occurred[0m
+[0;32mI (892) wifi:<ba-add>idx:0 (ifx:0, dc:99:14:53:c3:04), tid:0, ssn:0, winSize:64I (892) MQTT_CLIENT: Disconnected from MQTT broker[0m
+
+[0;32mI (922) wifi:connected with Mohamed Fathy, aid = 10, channel 3, BW20, bssid = dc:99:14:53:c3:04[0m
+[0;32mI (922) wifi:security: WPA2-PSK, phy: bgn, rssi: -60[0m
+[0;32mI (922) wifi:pm start, type: 1[0m
+
+[0;32mI (922) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (992) wifi:AP's beacon interval = 100352 us, DTIM period = 1[0m
+[0;32mI (4012) esp_netif_handlers: sta ip: 192.168.100.104, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (4012) WIFI_MANAGER: Connected! IP Address: 192.168.100.104[0m
+[0;32mI (4012) main_task: WiFi connected ip: 192.168.100.104[0m
+[0;32mI (10972) MQTT_CLIENT: Connected to MQTT broker[0m
+[0;32mI (10972) main_task: Connected to MQTT Broker[0m
+[0;32mI (10972) MQTT_CLIENT: Subscribed to '/smart_car/control/forward' (msg_id=26096)[0m
+[0;32mI (10982) MQTT_CLIENT: Subscribed to '/smart_car/control/backward' (msg_id=15239)[0m
+[0;32mI (10982) MQTT_CLIENT: Subscribed to '/smart_car/control/right' (msg_id=16950)[0m
+[0;32mI (10992) MQTT_CLIENT: Subscribed to '/smart_car/control/left' (msg_id=48004)[0m
+[0;32mI (11002) MQTT_CLIENT: Subscribed to '/smart_car/control/stop' (msg_id=1543)[0m
+[0;32mI (11012) MQTT_CLIENT: Subscription successful (msg_id=26096)[0m
+[0;32mI (11012) MQTT_CLIENT: Subscription successful (msg_id=15239)[0m
+[0;32mI (11022) MQTT_CLIENT: Subscription successful (msg_id=16950)[0m
+[0;32mI (11022) MQTT_CLIENT: Subscription successful (msg_id=48004)[0m
+[0;32mI (11342) MQTT_CLIENT: Subscription successful (msg_id=1543)[0m
+[0;32mI (11392) DC_MOTOR_DRIVER: GPIO16 is output[0m
+[0;32mI (11392) DC_MOTOR_DRIVER: GPIO17 is output[0m
+[0;32mI (11392) DC_MOTOR_DRIVER: GPIO18 is output[0m
+[0;32mI (11392) DC_MOTOR_DRIVER: GPIO19 is output[0m
+[0;32mI (11792) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (11802) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (11802) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (11812) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (11812) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (11822) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (11832) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (11832) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (12142) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (12152) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (12152) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (12162) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (12162) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (12172) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (12182) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (12182) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (12492) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (12502) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (12502) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (12512) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (12512) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (12522) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (12532) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (12542) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (12842) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (12852) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (12852) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (12862) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (12862) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (12872) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (12882) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (12882) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (13202) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (13202) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (13212) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (13212) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (13222) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (13232) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (13232) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (13242) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (13552) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (13562) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (13562) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (13572) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (13572) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (13582) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (13592) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (13592) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (13902) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (13902) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (13912) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (13912) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (13922) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (13932) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (13932) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (13942) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (14252) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (14262) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (14262) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (14272) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (14272) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (14282) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (14292) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (14292) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (14602) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (14602) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (14612) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (14612) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (14622) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (14632) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (14632) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (14642) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (14952) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (14962) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (14962) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (14972) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (14972) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (14982) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (14992) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (14992) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (15302) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (15302) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (15312) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (15312) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (15322) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (15332) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (15332) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (15342) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (15652) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (15662) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (15662) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (15672) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (15672) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (15682) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (15692) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (15702) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (16002) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (16012) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (16012) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (16022) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (16022) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (16032) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (16042) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (16042) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (16352) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (16362) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (16362) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (16372) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (16372) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (16382) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (16392) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (16392) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (16712) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (16722) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (16722) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (16732) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (16732) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (16742) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (16752) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (16762) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (17062) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (17072) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (17072) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (17082) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (17082) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (17092) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (17102) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (17102) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (17412) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (17412) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (17422) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (17422) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (17432) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (17442) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (17442) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (17452) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (17762) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (17762) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (17772) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (17772) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (17782) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (17792) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (17802) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (17802) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (18112) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (18112) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (18122) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (18122) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (18132) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (18142) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (18142) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (18152) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (18462) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (18472) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (18472) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (18482) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (18482) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (18492) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (18502) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (18502) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (18822) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (18822) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (18832) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (18832) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (18842) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (18852) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (18852) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (18872) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m
+[0;32mI (19172) MQTT_CLIENT: Published to '/smart_car/monitor/distance/forward' (msg_id=0)[0m
+[0;32mI (19182) MQTT_CLIENT: Published to '/smart_car/monitor/distance/backward' (msg_id=0)[0m
+[0;32mI (19182) MQTT_CLIENT: Published to '/smart_car/monitor/track/right' (msg_id=0)[0m
+[0;32mI (19192) MQTT_CLIENT: Published to '/smart_car/monitor/track/left' (msg_id=0)[0m
+[0;32mI (19192) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/roll' (msg_id=0)[0m
+[0;32mI (19202) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/pitch' (msg_id=0)[0m
+[0;32mI (19212) MQTT_CLIENT: Published to '/smart_car/monitor/rpy/yaw' (msg_id=0)[0m
+[0;32mI (19212) MQTT_CLIENT: Published to '/smart_car/monitor/temp/mpu6050' (msg_id=0)[0m

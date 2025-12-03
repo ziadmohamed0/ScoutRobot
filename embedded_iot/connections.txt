@@ -1,0 +1,43 @@
+// ***** Embedded Systems Bare-Metal connections ***** //
+* l298(motor driver h-bridge)
+---
+    enb -> g4
+    in1 -> g19
+    in2 -> g18
+    in3 -> g17
+    in4 -> g16
+    enb -> g5
+
+* ultrasoic sensor forward (distance)
+---
+    trig -> g21
+    echo -> g22
+
+* ultrasoic sensor backward (distance)
+---
+    trig -> g27
+    echo -> g26
+
+* tcrt5000 right (tracked sensor)
+---
+    D0 ->  g2
+    
+* tcrt5000 right (tracked sensor)
+---
+    D0 ->  g0
+
+// ***** Iot connections ***** //
+* topic control and monitor movements
+---
+    /smart_car/control/forward
+    /smart_car/control/backward
+    /smart_car/control/right
+    /smart_car/control/left
+    /smart_car/control/stop
+
+* topic control speed movements
+---
+    /smart_car/control/speed/right
+    /smart_car/control/speed/left
+
+

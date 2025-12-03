@@ -1,0 +1,19 @@
+idf_component_register(
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_driver_gpio
+        esp_adc
+        esp_driver_mcpwm
+        esp_driver_ledc
+        esp_driver_i2c
+        esp_wifi
+        esp_event
+        esp_timer
+        esp_netif
+        driver
+        espressif__mqtt
+        nvs_flash
+        freertos
+        esp_http_client     
+)

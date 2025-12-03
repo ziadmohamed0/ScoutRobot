@@ -1,0 +1,1980 @@
+[
+    {
+        "id": "41c7a7954634ece6",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c54654ce4d11fbc0",
+        "type": "mqtt out",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/control/forward",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "993d23bcedacd90c",
+        "x": 1810,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "5f70e9294122f437",
+        "type": "mqtt out",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/control/backward",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "993d23bcedacd90c",
+        "x": 1820,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "ebee5f3fe6da0aaa",
+        "type": "ui_button",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Left",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "/smart_car/control/forward",
+        "topicType": "msg",
+        "x": 1590,
+        "y": 880,
+        "wires": [
+            [
+                "5f70e9294122f437",
+                "ee342b8d8c23f51e",
+                "a6859162b99177bb"
+            ]
+        ]
+    },
+    {
+        "id": "901e60b96b567d9d",
+        "type": "mqtt out",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/control/right",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "993d23bcedacd90c",
+        "x": 1800,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "2d6c0a88caf8406d",
+        "type": "ui_button",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 4,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Forward",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "/smart_car/control/right",
+        "topicType": "msg",
+        "x": 1580,
+        "y": 920,
+        "wires": [
+            [
+                "901e60b96b567d9d",
+                "ee342b8d8c23f51e",
+                "2b545344c6719d75"
+            ]
+        ]
+    },
+    {
+        "id": "d87b3fde9edafe86",
+        "type": "mqtt out",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/control/left",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "993d23bcedacd90c",
+        "x": 1800,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "dd5b5caa347e088e",
+        "type": "ui_button",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Backward",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "/smart_car/control/left",
+        "topicType": "msg",
+        "x": 1580,
+        "y": 960,
+        "wires": [
+            [
+                "d87b3fde9edafe86",
+                "ee342b8d8c23f51e",
+                "bad9cd4de9f4c232"
+            ]
+        ]
+    },
+    {
+        "id": "4e2d70942369a246",
+        "type": "ui_button",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 2,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "/smart_car/control/stop",
+        "topicType": "msg",
+        "x": 1590,
+        "y": 1000,
+        "wires": [
+            [
+                "8144d1dad8ac8d02",
+                "ee342b8d8c23f51e"
+            ]
+        ]
+    },
+    {
+        "id": "8144d1dad8ac8d02",
+        "type": "mqtt out",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/control/stop",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "993d23bcedacd90c",
+        "x": 1800,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "a5ea0893effd7255",
+        "type": "ui_led2",
+        "z": "41c7a7954634ece6",
+        "order": 0,
+        "group": "787c424f8d7f7808",
+        "width": 0,
+        "height": 0,
+        "label": "Forward",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 1750,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "a6859162b99177bb",
+        "type": "ui_led2",
+        "z": "41c7a7954634ece6",
+        "order": 0,
+        "group": "787c424f8d7f7808",
+        "width": 0,
+        "height": 0,
+        "label": "Backward",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 1750,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "2b545344c6719d75",
+        "type": "ui_led2",
+        "z": "41c7a7954634ece6",
+        "order": 0,
+        "group": "787c424f8d7f7808",
+        "width": 0,
+        "height": 0,
+        "label": "Left",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 1750,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "bad9cd4de9f4c232",
+        "type": "ui_led2",
+        "z": "41c7a7954634ece6",
+        "order": 0,
+        "group": "787c424f8d7f7808",
+        "width": 0,
+        "height": 0,
+        "label": "Right",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 1750,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ee342b8d8c23f51e",
+        "type": "debug",
+        "z": "41c7a7954634ece6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1760,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "64cd1047ea269dc3",
+        "type": "ui_gauge",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "787c424f8d7f7808",
+        "order": 4,
+        "width": "4",
+        "height": "3",
+        "gtype": "gage",
+        "title": "forward ultrasonic",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-2",
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1310,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "cb197ec2ad802619",
+        "type": "ui_gauge",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "787c424f8d7f7808",
+        "order": 5,
+        "width": "4",
+        "height": "3",
+        "gtype": "gage",
+        "title": "backward ultrasonic",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-2",
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1320,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "ad5c58673d62b544",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/distance/forward",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 970,
+        "y": 700,
+        "wires": [
+            [
+                "b8dbaa330097c790",
+                "64cd1047ea269dc3",
+                "df0a63aaab18e94d"
+            ]
+        ]
+    },
+    {
+        "id": "f2f972012c51d616",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/distance/backward",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 960,
+        "y": 740,
+        "wires": [
+            [
+                "cb197ec2ad802619",
+                "894ba113af8bfae3",
+                "df0a63aaab18e94d"
+            ]
+        ]
+    },
+    {
+        "id": "26cbd0d49c9a0413",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "smart_car/monitor/track/right",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 990,
+        "y": 780,
+        "wires": [
+            [
+                "f5dfd7271e57b523",
+                "54812b811fddeb85",
+                "df0a63aaab18e94d"
+            ]
+        ]
+    },
+    {
+        "id": "3a2b98e098b7f2a8",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/track/left",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 990,
+        "y": 820,
+        "wires": [
+            [
+                "d403f84cf2888963",
+                "4b844927ea499a57",
+                "df0a63aaab18e94d"
+            ]
+        ]
+    },
+    {
+        "id": "f5dfd7271e57b523",
+        "type": "ui_led2",
+        "z": "41c7a7954634ece6",
+        "order": 6,
+        "group": "787c424f8d7f7808",
+        "width": 0,
+        "height": 0,
+        "label": "right track",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1270,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "d403f84cf2888963",
+        "type": "ui_led2",
+        "z": "41c7a7954634ece6",
+        "order": 6,
+        "group": "787c424f8d7f7808",
+        "width": 0,
+        "height": 0,
+        "label": "left track",
+        "property": "payload",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1270,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "a0535d9c1a3eb403",
+        "type": "ui_button",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 0,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Right",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "/smart_car/control/forward",
+        "topicType": "msg",
+        "x": 1590,
+        "y": 840,
+        "wires": [
+            [
+                "c54654ce4d11fbc0",
+                "ee342b8d8c23f51e",
+                "a5ea0893effd7255"
+            ]
+        ]
+    },
+    {
+        "id": "91a801d46ea83be7",
+        "type": "ui_chart",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "label": "Roll",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f4a102ea3f3e4a0",
+        "type": "ui_chart",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "label": "Pitch",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "efd74d5f99350907",
+        "type": "ui_chart",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "label": "Yaw",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1270,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a535deca8d102c69",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/rpy/roll",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1000,
+        "y": 860,
+        "wires": [
+            [
+                "91a801d46ea83be7",
+                "569dd8b1eff84424",
+                "df0a63aaab18e94d"
+            ]
+        ]
+    },
+    {
+        "id": "ac56a41881511e4c",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/rpy/pitch",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 980,
+        "y": 900,
+        "wires": [
+            [
+                "3f4a102ea3f3e4a0",
+                "85ac08e59ee9f914",
+                "df0a63aaab18e94d"
+            ]
+        ]
+    },
+    {
+        "id": "944ca718dd258132",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/rpy/yaw",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1000,
+        "y": 940,
+        "wires": [
+            [
+                "efd74d5f99350907",
+                "8fbbca0ebf35991a",
+                "df0a63aaab18e94d"
+            ]
+        ]
+    },
+    {
+        "id": "b8dbaa330097c790",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 7",
+        "func": "var now = new Date();\nmsg.payload = {\n    timestamp: now.toISOString(),\n    distance: parseFloat(msg.payload)\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 360,
+        "wires": [
+            [
+                "5a26bfa771604702"
+            ]
+        ]
+    },
+    {
+        "id": "5a26bfa771604702",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1430,
+        "y": 360,
+        "wires": [
+            [
+                "ec3436fc559692f1",
+                "3ab84e1144cf091e"
+            ]
+        ]
+    },
+    {
+        "id": "ec3436fc559692f1",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/forward_ultrasonic.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1790,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "894ba113af8bfae3",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 8",
+        "func": "var now = new Date();\nmsg.payload = {\n    timestamp: now.toISOString(),\n    distance: parseFloat(msg.payload)\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 400,
+        "wires": [
+            [
+                "d40942a9c849ae91"
+            ]
+        ]
+    },
+    {
+        "id": "d40942a9c849ae91",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1430,
+        "y": 400,
+        "wires": [
+            [
+                "828c531ed8021858",
+                "3ab84e1144cf091e"
+            ]
+        ]
+    },
+    {
+        "id": "828c531ed8021858",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/backward_ultrasonic.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1800,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54812b811fddeb85",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 9",
+        "func": "var now = new Date();\nmsg.payload = {\n    timestamp: now.toISOString(),\n    distance: parseFloat(msg.payload)\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 440,
+        "wires": [
+            [
+                "d5edf108e86553b2"
+            ]
+        ]
+    },
+    {
+        "id": "d5edf108e86553b2",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1430,
+        "y": 440,
+        "wires": [
+            [
+                "589a27083729ea7c",
+                "3ab84e1144cf091e"
+            ]
+        ]
+    },
+    {
+        "id": "589a27083729ea7c",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/tcrt_right.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1760,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b844927ea499a57",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 10",
+        "func": "var now = new Date();\nmsg.payload = {\n    timestamp: now.toISOString(),\n    distance: parseFloat(msg.payload)\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 480,
+        "wires": [
+            [
+                "af81b5b1091845a8"
+            ]
+        ]
+    },
+    {
+        "id": "af81b5b1091845a8",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1430,
+        "y": 480,
+        "wires": [
+            [
+                "5e35f3f7fb48e92d",
+                "3ab84e1144cf091e"
+            ]
+        ]
+    },
+    {
+        "id": "5e35f3f7fb48e92d",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/tcrt_left.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1750,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "569dd8b1eff84424",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 11",
+        "func": "var now = new Date();\n\nglobal.set(\"roll_value\", parseFloat(msg.payload));\nglobal.set(\"roll_timestamp\", now.toISOString());\n\nmsg.payload = {\n    timestamp: now.toISOString(),\n    roll: parseFloat(msg.payload)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 520,
+        "wires": [
+            [
+                "d2ddf9c839b1f231",
+                "aea92ae786698c35"
+            ]
+        ]
+    },
+    {
+        "id": "d2ddf9c839b1f231",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1420,
+        "y": 520,
+        "wires": [
+            [
+                "f801faeb5001f666",
+                "3ab84e1144cf091e"
+            ]
+        ]
+    },
+    {
+        "id": "f801faeb5001f666",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/mpu_roll.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1750,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85ac08e59ee9f914",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 12",
+        "func": "var now = new Date();\n\nglobal.set(\"pitch_value\", parseFloat(msg.payload));\nglobal.set(\"pitch_timestamp\", now.toISOString());\n\nmsg.payload = {\n    timestamp: now.toISOString(),\n    pitch: parseFloat(msg.payload)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 560,
+        "wires": [
+            [
+                "2c54d17b019c9220",
+                "aea92ae786698c35"
+            ]
+        ]
+    },
+    {
+        "id": "2c54d17b019c9220",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1420,
+        "y": 560,
+        "wires": [
+            [
+                "d0d8046727d934ab",
+                "3ab84e1144cf091e"
+            ]
+        ]
+    },
+    {
+        "id": "d0d8046727d934ab",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/mpu_pitch.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1750,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fbbca0ebf35991a",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 13",
+        "func": "var now = new Date();\n\nglobal.set(\"yaw_value\", parseFloat(msg.payload));\nglobal.set(\"yaw_timestamp\", now.toISOString());\n\nmsg.payload = {\n    timestamp: now.toISOString(),\n    yaw: parseFloat(msg.payload)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 600,
+        "wires": [
+            [
+                "e98f22dee862e953",
+                "aea92ae786698c35"
+            ]
+        ]
+    },
+    {
+        "id": "e98f22dee862e953",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1420,
+        "y": 600,
+        "wires": [
+            [
+                "68de2401428badac",
+                "3ab84e1144cf091e"
+            ]
+        ]
+    },
+    {
+        "id": "68de2401428badac",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/mpu_yaw.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1750,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9680a0f8862df5d1",
+        "type": "ui_chart",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "label": "Temprature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1290,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a362bd9566eee65c",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/temp/mpu6050",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 980,
+        "y": 980,
+        "wires": [
+            [
+                "9680a0f8862df5d1",
+                "060cb80f19ebc09b",
+                "df0a63aaab18e94d"
+            ]
+        ]
+    },
+    {
+        "id": "060cb80f19ebc09b",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 14",
+        "func": "var now = new Date();\nmsg.payload = {\n    timestamp: now.toISOString(),\n    distance: parseFloat(msg.payload)\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 640,
+        "wires": [
+            [
+                "2651d8d252c29e15"
+            ]
+        ]
+    },
+    {
+        "id": "2651d8d252c29e15",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1420,
+        "y": 640,
+        "wires": [
+            [
+                "81f902821ae17656",
+                "3ab84e1144cf091e"
+            ]
+        ]
+    },
+    {
+        "id": "81f902821ae17656",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/temprature.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1760,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3ab84e1144cf091e",
+        "type": "debug",
+        "z": "41c7a7954634ece6",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1580,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "df0a63aaab18e94d",
+        "type": "debug",
+        "z": "41c7a7954634ece6",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "aea92ae786698c35",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 15",
+        "func": "var counter = global.get(\"timestamp_counter\") || 0;\ncounter += 1; \n\nvar roll = global.get(\"roll_value\") || 0;\nvar pitch = global.get(\"pitch_value\") || 0;\nvar yaw = global.get(\"yaw_value\") || 0;\n\nmsg.payload = {\n    timestamp: counter,\n    roll: roll,\n    pitch: pitch,\n    yaw: yaw\n};\n\nglobal.set(\"timestamp_counter\", counter);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 300,
+        "wires": [
+            [
+                "11257f37ae1cf65a"
+            ]
+        ]
+    },
+    {
+        "id": "2a654f6c7bca3f6a",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/combined_rpy.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1940,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11257f37ae1cf65a",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1580,
+        "y": 300,
+        "wires": [
+            [
+                "2a654f6c7bca3f6a"
+            ]
+        ]
+    },
+    {
+        "id": "90bab880e5a1f75b",
+        "type": "ui_chart",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "label": "Acceleration X",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1300,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0dba41aef71b279e",
+        "type": "ui_chart",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "label": "Acceleration Y",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1300,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9f1984baddfb015",
+        "type": "ui_chart",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "group": "5185ddcb03f8a156",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "label": "Acceleration Z",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1300,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29dab3f4482e8d9a",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/acc/x",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1000,
+        "y": 1060,
+        "wires": [
+            [
+                "90bab880e5a1f75b",
+                "010f260f04386b22",
+                "4f256a4697868042"
+            ]
+        ]
+    },
+    {
+        "id": "8c1dc211f4c1456f",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/acc/y",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 990,
+        "y": 1100,
+        "wires": [
+            [
+                "0dba41aef71b279e",
+                "bc10e4c2cbad5cbf",
+                "4f256a4697868042"
+            ]
+        ]
+    },
+    {
+        "id": "3271a2bb3ec34de6",
+        "type": "mqtt in",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "topic": "/smart_car/monitor/acc/z",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "993d23bcedacd90c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1000,
+        "y": 1140,
+        "wires": [
+            [
+                "d9f1984baddfb015",
+                "61d7d5237b7dc104",
+                "4f256a4697868042"
+            ]
+        ]
+    },
+    {
+        "id": "010f260f04386b22",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 16",
+        "func": "var now = new Date();\n\nglobal.set(\"roll_value\", parseFloat(msg.payload));\nglobal.set(\"roll_timestamp\", now.toISOString());\n\nmsg.payload = {\n    timestamp: now.toISOString(),\n    roll: parseFloat(msg.payload)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 1180,
+        "wires": [
+            [
+                "58c346ae0441aec7"
+            ]
+        ]
+    },
+    {
+        "id": "58c346ae0441aec7",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1490,
+        "y": 1180,
+        "wires": [
+            [
+                "696a4ff37faf53fa"
+            ]
+        ]
+    },
+    {
+        "id": "696a4ff37faf53fa",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/acc_x.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1810,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc10e4c2cbad5cbf",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 17",
+        "func": "var now = new Date();\n\nglobal.set(\"pitch_value\", parseFloat(msg.payload));\nglobal.set(\"pitch_timestamp\", now.toISOString());\n\nmsg.payload = {\n    timestamp: now.toISOString(),\n    pitch: parseFloat(msg.payload)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 1220,
+        "wires": [
+            [
+                "4798a8c0886f1e68"
+            ]
+        ]
+    },
+    {
+        "id": "4798a8c0886f1e68",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1490,
+        "y": 1220,
+        "wires": [
+            [
+                "601c0b42a9a5f754"
+            ]
+        ]
+    },
+    {
+        "id": "601c0b42a9a5f754",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/acc_y.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1810,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61d7d5237b7dc104",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 18",
+        "func": "var now = new Date();\n\nglobal.set(\"yaw_value\", parseFloat(msg.payload));\nglobal.set(\"yaw_timestamp\", now.toISOString());\n\nmsg.payload = {\n    timestamp: now.toISOString(),\n    yaw: parseFloat(msg.payload)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 1260,
+        "wires": [
+            [
+                "0831f672ad0e3d0f"
+            ]
+        ]
+    },
+    {
+        "id": "0831f672ad0e3d0f",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1490,
+        "y": 1260,
+        "wires": [
+            [
+                "a344857574a9f9a4"
+            ]
+        ]
+    },
+    {
+        "id": "a344857574a9f9a4",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/acc_z.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1810,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f256a4697868042",
+        "type": "function",
+        "z": "41c7a7954634ece6",
+        "name": "function 19",
+        "func": "var counter = global.get(\"timestamp_counter\") || 0;\ncounter += 1; \n\nvar roll = global.get(\"roll_value\") || 0;\nvar pitch = global.get(\"pitch_value\") || 0;\nvar yaw = global.get(\"yaw_value\") || 0;\n\nmsg.payload = {\n    timestamp: counter,\n    roll: roll,\n    pitch: pitch,\n    yaw: yaw\n};\n\nglobal.set(\"timestamp_counter\", counter);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 1300,
+        "wires": [
+            [
+                "7927f7b460ab3003"
+            ]
+        ]
+    },
+    {
+        "id": "7927f7b460ab3003",
+        "type": "csv",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 1440,
+        "y": 1300,
+        "wires": [
+            [
+                "47002890a853e7da"
+            ]
+        ]
+    },
+    {
+        "id": "47002890a853e7da",
+        "type": "file",
+        "z": "41c7a7954634ece6",
+        "name": "",
+        "filename": "/home/ziad/ziad_ws/Project_V2V/embedded_iot/data/combined_xyz.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1800,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "993d23bcedacd90c",
+        "type": "mqtt-broker",
+        "name": "My Home ",
+        "broker": "192.168.100.25 ",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5185ddcb03f8a156",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "2ad08bccb3ab4ea8",
+        "order": 1,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "787c424f8d7f7808",
+        "type": "ui_group",
+        "name": "Monitor",
+        "tab": "2ad08bccb3ab4ea8",
+        "order": 3,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2ad08bccb3ab4ea8",
+        "type": "ui_tab",
+        "name": "Smart Car",
+        "icon": "fa-fire",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "07c25ff8bbeda244",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-ui-led2": "0.4.19"
+        }
+    }
+]
