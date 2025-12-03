@@ -113,12 +113,6 @@ ScoutRobot/
 │   ├── build/                    # Build artifacts
 │   └── install/                  # Installation directory
 │
-├── matlab_analysis/              # MATLAB Simulation & Analysis
-│   ├── Elegoo.slx               # Simulink model
-│   ├── Elegoo_DataFile.m        # System analysis data
-│   ├── *.STEP                   # CAD models (STEP format)
-│   └── *.png                    # Simulation results & diagrams
-│
 ├── Elegoo/                       # SolidWorks CAD Models
 │   ├── *.SLDPRT                 # Individual component parts
 │   ├── *.SLDASM                 # Assembly definitions
