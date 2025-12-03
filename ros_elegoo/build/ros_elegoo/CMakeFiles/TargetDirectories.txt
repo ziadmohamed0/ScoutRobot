@@ -1,0 +1,9 @@
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/uninstall.dir
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/ros_elegoo_uninstall.dir
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/test.dir
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/edit_cache.dir
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/rebuild_cache.dir
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/list_install_components.dir
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/install.dir
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/install/local.dir
+/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo/CMakeFiles/install/strip.dir

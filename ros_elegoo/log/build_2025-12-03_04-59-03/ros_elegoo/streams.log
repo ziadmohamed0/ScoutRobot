@@ -1,0 +1,63 @@
+[0.028s] Invoking command in '/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziad/turtlebot3_ws/install/turtlebot3_teleop:/home/ziad/turtlebot3_ws/install/turtlebot3_example:/home/ziad/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake /home/ziad/Downloads/ScoutRobot/ros_elegoo/src/ros_elegoo -DCMAKE_INSTALL_PREFIX=/home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo
+[0.255s] -- The C compiler identification is GNU 11.4.0
+[0.408s] -- The CXX compiler identification is GNU 11.4.0
+[0.423s] -- Detecting C compiler ABI info
+[0.544s] -- Detecting C compiler ABI info - done
+[0.554s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.554s] -- Detecting C compile features
+[0.555s] -- Detecting C compile features - done
+[0.560s] -- Detecting CXX compiler ABI info
+[0.697s] -- Detecting CXX compiler ABI info - done
+[0.706s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.706s] -- Detecting CXX compile features
+[0.707s] -- Detecting CXX compile features - done
+[0.736s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.281s] -- Found Python3: /home/ziad/.espressif/python_env/idf6.0_py3.10_env/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.584s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.803s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.806s] -- Added test 'lint_cmake' to check CMake code style
+[1.809s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.813s] -- Added test 'xmllint' to check XML markup files
+[1.820s] -- Configuring done
+[1.823s] -- Generating done
+[1.825s] -- Build files have been written to: /home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo
+[1.831s] Invoked command in '/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziad/turtlebot3_ws/install/turtlebot3_teleop:/home/ziad/turtlebot3_ws/install/turtlebot3_example:/home/ziad/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake /home/ziad/Downloads/ScoutRobot/ros_elegoo/src/ros_elegoo -DCMAKE_INSTALL_PREFIX=/home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo
+[1.833s] Invoking command in '/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziad/turtlebot3_ws/install/turtlebot3_teleop:/home/ziad/turtlebot3_ws/install/turtlebot3_example:/home/ziad/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --build /home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo -- -j4 -l4
+[1.905s] Invoked command in '/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziad/turtlebot3_ws/install/turtlebot3_teleop:/home/ziad/turtlebot3_ws/install/turtlebot3_example:/home/ziad/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --build /home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo -- -j4 -l4
+[1.924s] Invoking command in '/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziad/turtlebot3_ws/install/turtlebot3_teleop:/home/ziad/turtlebot3_ws/install/turtlebot3_example:/home/ziad/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --install /home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo
+[1.939s] -- Install configuration: ""
+[1.939s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/launch
+[1.939s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/launch/display.launch.py
+[1.940s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/urdf
+[1.940s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/urdf/ros_elegoo.csv
+[1.940s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/urdf/ros_elegoo.urdf
+[1.940s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes
+[1.940s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/fr_motor_Link.STL
+[1.941s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/imu_link.STL
+[1.941s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/fl_motor_link.STL
+[1.942s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/fl_wheel_link.STL
+[1.942s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/br_wheel_link.STL
+[1.943s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/l298_link.STL
+[1.943s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/esp32_link.STL
+[1.944s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/bl_motor_link.STL
+[1.944s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/br_motor_link.STL
+[1.945s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/fr_wheel_link.STL
+[1.946s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/base_link.STL
+[1.949s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/bl_wheel_link.STL
+[1.950s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/meshes/track_sensor_Link.STL
+[1.950s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ament_index/resource_index/package_run_dependencies/ros_elegoo
+[1.951s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ament_index/resource_index/parent_prefix_path/ros_elegoo
+[1.951s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/environment/ament_prefix_path.sh
+[1.951s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/environment/ament_prefix_path.dsv
+[1.952s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/environment/path.sh
+[1.952s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/environment/path.dsv
+[1.952s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/local_setup.bash
+[1.952s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/local_setup.sh
+[1.952s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/local_setup.zsh
+[1.953s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/local_setup.dsv
+[1.953s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/package.dsv
+[1.954s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ament_index/resource_index/packages/ros_elegoo
+[1.954s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/cmake/ros_elegooConfig.cmake
+[1.954s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/cmake/ros_elegooConfig-version.cmake
+[1.954s] -- Installing: /home/ziad/Downloads/ScoutRobot/ros_elegoo/install/ros_elegoo/share/ros_elegoo/package.xml
+[1.957s] Invoked command in '/home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ziad/turtlebot3_ws/install/turtlebot3_teleop:/home/ziad/turtlebot3_ws/install/turtlebot3_example:/home/ziad/ws_moveit/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --install /home/ziad/Downloads/ScoutRobot/ros_elegoo/build/ros_elegoo
