@@ -1,6 +1,0 @@
-source "/home/ziad/esp/esp-idf/components/bootloader/Kconfig.projbuild"
-source "/home/ziad/esp/esp-idf/components/esp_app_format/Kconfig.projbuild"
-source "/home/ziad/esp/esp-idf/components/esp_rom/Kconfig.projbuild"
-source "/home/ziad/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
-source "/home/ziad/esp/esp-idf/components/partition_table/Kconfig.projbuild"
-source "/home/ziad/ziad_ws/Project_V2V/elegoo_emdedded/components/micro_ros_espidf_component/Kconfig.projbuild"
